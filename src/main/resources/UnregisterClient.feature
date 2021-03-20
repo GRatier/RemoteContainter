@@ -1,4 +1,4 @@
-Feature: Unregister client
+Feature: Unregister Client
   
 	The system should allow logistic companies to unregister clients.
 	Basic information should be entered: (client name, email)

@@ -1,4 +1,4 @@
-Feature: Register client
+Feature: Register Client
   
 	The system should allow logistic companies to register new clients.
 	Basic information should be entered: (e.g., client name, address, reference person and email)
