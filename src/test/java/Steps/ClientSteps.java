@@ -1,22 +1,5 @@
 package Steps;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Stream;
-
-import LogisticCompany.App.LogisticCompanyApp;
-import LogisticCompany.App.OperationNotAllowedException;
-import LogisticCompany.domain.Address;
-import LogisticCompany.domain.Client;
-import LogisticCompany.domain.Container;
-import LogisticCompany.domain.Journey;
-import LogisticCompany.info.ClientInfo;
-import LogisticCompany.info.ContainerInfo;
-import LogisticCompany.info.JourneyInfo;
-import LogisticCompany.persistence.InMemoryRepository;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
