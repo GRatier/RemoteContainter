@@ -20,4 +20,4 @@ Feature: View pressure history of container
     And a container with container number 123
     And a has travelled status false
     When client searches for journey history of container number 123
-    Then system displays message that container with number 123 has not been on any journey
+    Then system displays message that container with number 123 has not been on a journey
