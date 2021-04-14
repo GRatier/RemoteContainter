@@ -50,8 +50,8 @@ public class ClientInfo {
 		return new Client(this);
 	}
 	
-	public void setRefPerson(String refPerson) {
-		this.reference = refPerson;
+	public void setReference(String reference) {
+		this.reference = reference;
 	}
 	
 	public String toString() {
