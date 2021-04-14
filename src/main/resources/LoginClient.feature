@@ -12,4 +12,3 @@ Scenario: Client has the wrong password
 	And the password is "wrong password"
 	Then a client login fails
 	And a client is not logged in
-wsfsdf
