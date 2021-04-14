@@ -1,20 +1,13 @@
 package domains;
 
-import javax.persistence.*;
-
 import mainClasses.ClientInfo;
 
-@Entity
 public class Client{
-    @GeneratedValue
-    @Id
-    private long id;
+
 	private String name;
-//	@Id
 	private String email;
 	private String password;
 	private String refPerson;
-	@Embedded
 	private Address address;
 	public void setAddress(Address address) {
 		this.address = address;
