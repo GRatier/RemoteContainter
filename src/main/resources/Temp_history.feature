@@ -1,4 +1,3 @@
-@tag
 Feature: View temperature history of container
 
   @tag1

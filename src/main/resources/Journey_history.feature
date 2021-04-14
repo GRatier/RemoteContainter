@@ -1,4 +1,3 @@
-@tag
 Feature: View journey history of container
 
   @tag1

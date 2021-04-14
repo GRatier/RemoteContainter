@@ -1,4 +1,3 @@
-@tag
 Feature: View pressure history of container
 
   @tag1

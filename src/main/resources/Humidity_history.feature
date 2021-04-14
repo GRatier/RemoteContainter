@@ -1,4 +1,3 @@
-@tag
 Feature: View air humidity history of container
 
   @tag1
