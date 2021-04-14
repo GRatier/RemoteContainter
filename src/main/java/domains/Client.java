@@ -9,10 +9,7 @@ public class Client{
 	private String password;
 	private String refPerson;
 	private Address address;
-	public void setAddress(Address address) {
-		this.address = address;
-	}
-
+	
 	public Client() {
 		
 	}
@@ -39,6 +36,11 @@ public class Client{
 	public Address getAddress() {
 		return address;
 	}
+	
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	
 	public boolean matchClient(String searchEmail) {
 		return email.contains(searchEmail) || name.contains(searchEmail) || refPerson.contains(searchEmail);
 	}
