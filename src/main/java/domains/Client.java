@@ -11,7 +11,7 @@ public class Client{
 	private Address address;
 	
 	public Client() {
-		
+		//Edit
 	}
 	
 	public Client(ClientInfo clientInfo) {
