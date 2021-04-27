@@ -2,7 +2,7 @@ Feature: Client can search for a journey
 
 Background: The client has a set of journeys
     Given a client is logged in
-    And these journeys are in the system
+    And the client have these journeys in the system
         | Banana | Copenhagen | Sydney |
         | Banana | Sydney | Copenhagen |
         | Tables | Beijing | New York |
