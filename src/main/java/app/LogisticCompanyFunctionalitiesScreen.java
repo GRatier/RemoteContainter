@@ -28,7 +28,6 @@ public class LogisticCompanyFunctionalitiesScreen {
 	private LogisticCompanyLoginScreen parentWindow;
 	
 	private JButton btnRegisterClient;
-	private JButton btnContainerForJourney;
 	private JButton btnFindJourney; 
 	private JButton btnFindClient;
 	private JButton btnLogout;
@@ -99,7 +98,6 @@ public class LogisticCompanyFunctionalitiesScreen {
 		
 		
 		registerClientScreen = new RegisterClientScreen(logisticCompanyApp, this);
-		registerContainerScreen = new RegisterContainerScreen(logisticCompanyApp, this);
 		findClientScreen = new FindClientScreen(logisticCompanyApp, this);
 		findJourneyScreen = new FindJourneyScreen(logisticCompanyApp, this, frame);
 		
