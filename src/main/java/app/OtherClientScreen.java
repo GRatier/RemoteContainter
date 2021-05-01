@@ -10,7 +10,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import LogisticCompany.App.LogisticCompanyApp;
 import domains.LogisticCom;
 
 public class OtherClientScreen {

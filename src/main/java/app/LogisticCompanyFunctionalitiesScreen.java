@@ -66,15 +66,6 @@ public class LogisticCompanyFunctionalitiesScreen {
 		
 		
 
-		btnContainerForJourney = new JButton("Register Container for Journey");
-		btnContainerForJourney.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				setVisible(false);
-				registerContainerScreen.setVisible(true);
-			}
-		});
-		btnContainerForJourney.setBounds(104, 133, 193, 29);
-		panelLogisticCompanyFunc.add(btnContainerForJourney);
 		
 		btnFindJourney = new JButton("Find Journey");
 		btnFindJourney.addActionListener(new ActionListener() {

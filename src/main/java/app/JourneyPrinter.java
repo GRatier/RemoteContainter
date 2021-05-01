@@ -16,10 +16,6 @@ public class JourneyPrinter {
 		this.journey = journey;
 	}
 	
-	public JourneyPrinter(JourneyInfo journey) {
-		this.journey = journey;
-	}
-
 	public String printDetail() {
 		StringBuffer b = new StringBuffer();
 		JourneyStatusEntry journeyStatus;

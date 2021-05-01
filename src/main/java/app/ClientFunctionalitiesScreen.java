@@ -92,16 +92,6 @@ public class ClientFunctionalitiesScreen {
 		btnOtherClients.setBounds(95, 173, 210, 29);
 		panelClientFunc.add(btnOtherClients);
 		
-		btnGiveAccess = new JButton("Give Access to Other Clients");
-		btnGiveAccess.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				setVisible(false);
-				giveAccessScreen.setVisible(true);
-			}
-		});
-		btnGiveAccess.setBounds(95, 213, 210, 29);
-		panelClientFunc.add(btnGiveAccess);
-		
 		btnChangePassword = new JButton("Change Password");
 		btnChangePassword.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -117,7 +107,6 @@ public class ClientFunctionalitiesScreen {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
 				mainScreen.setVisible(true);
-				// logout from app. 
 			}
 		});
 		btnLogout.setBounds(21, 28, 80, 29);
@@ -127,7 +116,6 @@ public class ClientFunctionalitiesScreen {
 		registerJourneyScreen = new RegisterJourneyScreen(logisticCompanyApp, this);
 		clientFindJourneyScreen = new ClientFindJourneyScreen(logisticCompanyApp, this, client);
 		otherClientScreen = new OtherClientScreen(logisticCompanyApp, this);
-		giveAccessScreen = new GiveAccessScreen(logisticCompanyApp, this);
 		changePasswordScreen = new ChangePasswordScreen(logisticCompanyApp, this, client);
 		
 	}

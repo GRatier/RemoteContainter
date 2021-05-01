@@ -138,20 +138,6 @@ public class FindJourneyScreen implements ListSelectionListener, PropertyChangeL
 		btnUpdateJourney.setEnabled(false);
 		panelFindJourney.add(btnUpdateJourney);
 		
-
-		btnViewContainer = new JButton("Update container");
-		btnViewContainer.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				setVisible(false);
-				updateContainersScreen.setVisible(true);
-			}
-		});
-		
-		btnViewContainer.setBounds(203, 450, 180, 29);
-		btnViewContainer.setEnabled(false);
-		panelFindJourney.add(btnViewContainer);
-		
-		
 		updateJourneyScreen = new UpdateJourneyScreen(logisticCompanyApp, this, selectedjourneyInfo);
 	
 	
