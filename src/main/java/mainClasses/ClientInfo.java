@@ -4,27 +4,27 @@ import domains.Address;
 import domains.Client;
 
 public class ClientInfo {
-	
 	private String name;
 	private String email;
-	private String reference;
+	private String reference_person;
 	private Address address;
-
+	
+	
 	public ClientInfo(String name, String email, String reference_person) {
 		this.name = name;
 		this.email = email;
-		this.reference = reference_person;
+		this.reference_person = reference_person;
 	}
 	
 	public ClientInfo(Client client) {
 		this.name = client.getName();
 		this.email = client.getEmail();
-		this.reference = client.getRefPerson();
+		this.reference_person = client.getRefPerson();
 		this.address = client.getAddress();
 	}
 	
 	public String getReference_person() {
-		return reference;
+		return reference_person;
 	}
 
 	public Address getAddress() {
@@ -50,8 +50,8 @@ public class ClientInfo {
 		return new Client(this);
 	}
 	
-	public void setReference(String reference) {
-		this.reference = reference;
+	public void setRefPerson(String refPerson) {
+		this.reference_person = refPerson;
 	}
 	
 	public String toString() {
