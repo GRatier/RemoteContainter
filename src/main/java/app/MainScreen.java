@@ -2,15 +2,22 @@ package app;
 
 import java.awt.CardLayout;
 import java.awt.EventQueue;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import domains.Address;
@@ -121,8 +128,9 @@ public class MainScreen {
 	
 	/**
 	 * Initialize the contents of the frame.
+	 * @throws IOException 
 	 */
-	private void initialize() {
+	private void initialize() throws IOException {
 		frame = new JFrame("Remote Container Tracking");
 		frame.setBounds(100, 100, 404, 550);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -173,6 +181,5 @@ public class MainScreen {
 	public void addPanel(JPanel panel) {
 		frame.getContentPane().add(panel);
 	}
-
-
+	
 }
