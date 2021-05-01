@@ -30,7 +30,6 @@ import mainClasses.OperationNotAllowedException;
 public class FindJourneyScreen implements ListSelectionListener, PropertyChangeListener{
 	LogisticCom logisticCompanyApp;
 	UpdateJourneyScreen updateJourneyScreen;
-	UpdateContainersScreen updateContainersScreen;
 	private LogisticCompanyFunctionalitiesScreen parentWindow;
 	private JPanel panelFindJourney;
 	private DefaultListModel<JourneyInfo> searchResults;

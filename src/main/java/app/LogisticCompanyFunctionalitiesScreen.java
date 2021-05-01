@@ -23,7 +23,6 @@ import domains.LogisticCom;
 public class LogisticCompanyFunctionalitiesScreen {
 	LogisticCom logisticCompanyApp;
 	RegisterClientScreen registerClientScreen;
-	RegisterContainerScreen registerContainerScreen;
 	FindClientScreen findClientScreen; 
 	FindJourneyScreen findJourneyScreen;
 	private LogisticCompanyLoginScreen parentWindow;

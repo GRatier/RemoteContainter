@@ -28,7 +28,6 @@ public class ClientFunctionalitiesScreen {
 	RegisterJourneyScreen registerJourneyScreen;
 	ClientFindJourneyScreen clientFindJourneyScreen;
 	OtherClientScreen otherClientScreen;
-	GiveAccessScreen giveAccessScreen;
 	ChangePasswordScreen changePasswordScreen;	
 	private ClientLoginScreen parentWindow;
 	
