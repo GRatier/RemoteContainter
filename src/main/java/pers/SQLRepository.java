@@ -27,9 +27,9 @@ public class SQLRepository implements ClientRepository , JourneyRepository {
 			this.isProduction = isProduction;
 			Map<String, String> properties = new HashMap<String, String>();
 			if (isProduction) {
-				properties.put("javax.persistence.jdbc.url", "jdbc:sqlite:lib/db/production.db");
+				properties.put("javax.persistence.jdbc.url", "jdbc:sqlite:dbs/production.db");
 			} else {
-				properties.put("javax.persistence.jdbc.url", "jdbc:sqlite:lib/db/test.db");
+				properties.put("javax.persistence.jdbc.url", "jdbc:sqlite:dbs/test.db");
 			}
 
 			emf = Persistence.createEntityManagerFactory("RemoteContainerApp", properties);
