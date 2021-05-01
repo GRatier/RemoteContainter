@@ -113,9 +113,7 @@ public class MainScreen {
 		
 //		logisticCompanyApp.registerContainer(new ContainerInfo(""));
 //		logisticCompanyApp.registerContainerToJourney(new ContainerInfo(""), journey1);
-		
-		List<JourneyInfo> journeysList = Arrays.asList(journey1,journey2,journey3,journey4,journey5,journey6);
-		
+				
 		logisticCompanyApp.logisticCompanyLogout();
 	}
 
