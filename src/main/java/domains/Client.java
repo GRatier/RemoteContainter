@@ -74,7 +74,7 @@ public class Client{
 	}
 	
 	public ClientInfo asClientInfo() {
-		return new ClientInfo(this.getName(), this.getEmail(), this.getRefPerson(), this.address, this.journeys);
+		return new ClientInfo(this.getName(), this.getEmail(), this.getRefPerson());
 	}
 	
 	public void updateClientInfo(ClientInfo clientInfo) {
