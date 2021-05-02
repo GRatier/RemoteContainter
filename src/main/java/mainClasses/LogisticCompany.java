@@ -1,7 +1,6 @@
 package mainClasses;
 
 import domains.LogisticCom;
-import mainClasses.ContainerInfo;
 
 //
 

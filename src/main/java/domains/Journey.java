@@ -1,10 +1,5 @@
 package domains;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 import javax.persistence.*;
 
 import mainClasses.JourneyInfo;
@@ -18,6 +13,9 @@ public class Journey {
 	private String destinationPort;
 	private boolean isRegistered;
 	private String cargo;
+	private float internalTemp;
+	private float airHumidity;
+	private float atmPressure;
 
 	@Embedded
 	private JourneyStatusEntry currentJourneyStatus;
@@ -44,6 +42,18 @@ public class Journey {
 //		journeyStatus.getLocation();
 	}
 
+	public void setInternalTemp(float temp) {
+		this.internalTemp = temp;
+	}
+	
+	public void setairHumidity(float airHumidity) {
+		this.airHumidity = airHumidity;
+	}
+	
+	public void setatmPressure(float atmPressure) {
+		this.atmPressure = atmPressure;
+	}
+	
 	public JourneyStatusEntry getJourneyStatus() {
 		return currentJourneyStatus;
 	}
@@ -62,6 +72,18 @@ public class Journey {
 
 	public long getId() {
 		return id;
+	}
+	
+	public float getInternalTemp() {
+		return internalTemp;
+	}
+	
+	public float getAirHumidity() {
+		return airHumidity;
+	}
+	
+	public float getAtmPressure() {
+		return atmPressure;
 	}
 
 	public boolean matchJourney(String searchText) {
