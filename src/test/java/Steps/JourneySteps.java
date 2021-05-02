@@ -25,7 +25,7 @@ public class JourneySteps {
 	public JourneySteps(LogisticCom logisticCompanyApp,ClientHelper clientHelper, JourneyHelper journeyHelper) {
 		this.logisticCompanyApp = logisticCompanyApp;
 		this.clientHelper = clientHelper;
-		this.journeyHelper =journeyHelper;
+		this.journeyHelper = journeyHelper;
 	}
 	
 	@When("the logistic company updates the journey status to location {string}, air humidity {double}, atm pressure {double}, internal temp {double}")
