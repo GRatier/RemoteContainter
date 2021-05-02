@@ -23,14 +23,19 @@ public class LogisticCom {
 	private JourneyRepository journeyRepository;
 	private Client client;
 	private JourneyInfo selectedJourneyInfo;
+	private double airHumidity;
+	private double atmPressure;
+	private double internalTemp;
+	private int containerId;
 	
 	public LogisticCom(ClientRepository clientRepository, JourneyRepository journeyRepository ) {
 		this.journeyRepository = journeyRepository;
 		this.clientRepository = clientRepository;
 	}
 	
-	public LogisticCom() {
+	public LogisticCom(int containerId, double airHumidity, double atmPressure, double internalTemp) {
 	}
+
 
 	public void clearDatabase() {
 		clientRepository.clearClientDatabase();
@@ -215,6 +220,39 @@ public class LogisticCom {
 	
 	public Client getClient() {
 		return client;
+	}
+	
+	public int getContainerId() {
+		return containerId;
+	}
+
+	public void setContainerId(int containerId) {
+		this.containerId = containerId;
+	}
+
+	
+	public double getAirHumidity() {
+		return airHumidity;
+	}
+
+	public void setAirHumidity(double airHumidity) {
+		this.airHumidity = airHumidity;
+	}
+
+	public double getAtmPressure() {
+		return atmPressure;
+	}
+
+	public void setAtmPressure(double atmPressure) {
+		this.atmPressure = atmPressure;
+	}
+
+	public double getInternalTemp() {
+		return internalTemp;
+	}
+
+	public void setInternalTemp(double internalTemp) {
+		this.internalTemp = internalTemp;
 	}
 	
 	public void addObserver(PropertyChangeListener l) {
